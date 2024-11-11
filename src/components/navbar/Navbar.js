@@ -12,6 +12,7 @@ import {
   FiBox,
 } from "react-icons/fi";
 import HamburgerButton from "../elements/HamburgerButton";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const isSmall = useMediaQuery({ query: `(max-width: ${breackpoints.md}px)` });
@@ -30,18 +31,26 @@ export default function Navbar() {
         <NavLayout.Logo>
           {isMedium && (
             <>
-              <FiBox /> <NavLayout.Title>Menu prueba</NavLayout.Title>
+              <FiBox /> <NavLayout.Title>Ayudas para la DANA</NavLayout.Title>
             </>
           )}
           {isSmall && <HamburgerButton isActive={isActive} toggle={toggle} />}
         </NavLayout.Logo>
       </NavLayout.Header>
       <NavLayout.Menu>
-        <NavLayout.Item text="Home" icon={FiHome} to="/" />
-        <NavLayout.Item text="About" icon={FiHelpCircle} to="/" />
-        <NavLayout.Item text="Account" icon={FiUser} to="/" />
-        <NavLayout.Item text="Settings" icon={FiSettings} to="/" />
-        <NavLayout.Item text="Logout" icon={FiLogOut} to="/" />
+        <NavLayout.Item>
+          <Link to="/ayudas">
+            <FiHome /> Ofrece o pide ayuda
+          </Link>
+        </NavLayout.Item>
+        <NavLayout.Item>
+          <Link to="/donaciones">
+            <FiHelpCircle /> Donaciones a organizaciones
+          </Link>
+        </NavLayout.Item>
+        <NavLayout.Item text="Donaciones a protectoras" icon={FiUser} to="/protectoras" />
+        <NavLayout.Item text="Contacto" icon={FiSettings} to="/contact" />
+        {/* <NavLayout.Item text="Logout" icon={FiLogOut} to="/" /> */}
       </NavLayout.Menu>
     </NavLayout>
   );

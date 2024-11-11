@@ -8,9 +8,7 @@ import "./styles/hamburgers.min.css";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Switch>
-        <Route path="/" component={App} exact />
-      </Switch>
+      <App />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
