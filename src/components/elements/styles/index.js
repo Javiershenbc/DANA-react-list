@@ -6,14 +6,15 @@ const mediaMd = mediaQuery("md");
 const mediaSm = mediaQuery("sm");
 
 export const Main = styled.main`
-  padding: 3rem;
+  padding: 3rem 3rem 5rem 3rem;
+
   position: relative;
   overflow: hidden auto;
   height: 100vh;
   width: 100%;
   background: #FAF5E9;
   ${mediaSm(`
-    padding: 1.4rem;
+    padding: 1.4em 1.4em 3em 1.4em;
   `)}
 `;
 
