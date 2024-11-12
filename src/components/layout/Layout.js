@@ -111,7 +111,7 @@ const HomeLayout = () => {
 const AyudaLayout = () => {
   return (
     <>
-      <SectionTitle>Links para ofrecer o solicitar ayuda y voluntariados</SectionTitle>
+      <SectionTitle>Ofrecer o solicitar ayuda y voluntariados</SectionTitle>
       <SectionDescription>
         Este apartado reúne enlaces a plataformas y organizaciones que coordinan la ayuda para los afectados por la DANA. Aquí encontrarás información tanto si estás buscando recibir apoyo como si deseas participar como voluntario. Los recursos están organizados para facilitar la búsqueda y el acceso a la ayuda necesaria o para colaborar en las tareas de recuperación.
       </SectionDescription>
@@ -136,7 +136,7 @@ const AyudaLayout = () => {
 const DonationsLayout = () => {
   return (
     <>
-      <SectionTitle>Links para donar dinero, material o comida</SectionTitle>
+      <SectionTitle>Donar dinero, material o comida</SectionTitle>
       <SectionDescription>
         En esta sección se incluyen enlaces a diversas organizaciones que están recaudando fondos para apoyar a los afectados por la DANA. Las donaciones permiten cubrir necesidades básicas y apoyar en la recuperación de las zonas impactadas. Los enlaces facilitan el acceso directo a las páginas de estas organizaciones, donde podrás encontrar detalles sobre cómo contribuir económicamente.
       </SectionDescription>
