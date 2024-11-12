@@ -38,7 +38,7 @@ const navbar = {
     icon: {
       fontSize: "1.3rem",
       stroke: "#ffffffa3",
-      
+
       hover: {
         stroke: "#fff",
       },

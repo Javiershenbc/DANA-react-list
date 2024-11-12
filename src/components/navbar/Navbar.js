@@ -5,14 +5,13 @@ import { breackpoints } from "../../config";
 import cls from "classnames";
 import {
   FiHome,
-  FiHelpCircle,
-  FiUser,
-  FiSettings,
-  FiLogOut,
-  FiBox,
+  FiMapPin,
+  FiPlusCircle,
+  FiHeart,
+  FiMessageCircle,
+  FiLink,
 } from "react-icons/fi";
 import HamburgerButton from "../elements/HamburgerButton";
-import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const isSmall = useMediaQuery({ query: `(max-width: ${breackpoints.md}px)` });
@@ -31,26 +30,18 @@ export default function Navbar() {
         <NavLayout.Logo>
           {isMedium && (
             <>
-              <FiBox /> <NavLayout.Title>Ayudas para la DANA</NavLayout.Title>
+              <FiLink /> <NavLayout.Title>Información Dana</NavLayout.Title>
             </>
           )}
           {isSmall && <HamburgerButton isActive={isActive} toggle={toggle} />}
         </NavLayout.Logo>
       </NavLayout.Header>
       <NavLayout.Menu>
-        <NavLayout.Item>
-          <Link to="/ayudas">
-            <FiHome /> Ofrece o pide ayuda
-          </Link>
-        </NavLayout.Item>
-        <NavLayout.Item>
-          <Link to="/donaciones">
-            <FiHelpCircle /> Donaciones a organizaciones
-          </Link>
-        </NavLayout.Item>
-        <NavLayout.Item text="Donaciones a protectoras" icon={FiUser} to="/protectoras" />
-        <NavLayout.Item text="Contacto" icon={FiSettings} to="/contact" />
-        {/* <NavLayout.Item text="Logout" icon={FiLogOut} to="/" /> */}
+        <NavLayout.Item text="¿Cómo puedo ayudar?" icon={FiHome} to="/" />
+        <NavLayout.Item text="Ayudas o voluntariados" icon={FiMapPin} to="/ayudas" />
+        <NavLayout.Item text="Donaciones" icon={FiPlusCircle} to="/donaciones" />
+        <NavLayout.Item text="Protectoras y animales" icon={FiHeart} to="/animales" />
+        <NavLayout.Item text="Contacto" icon={FiMessageCircle} to="/contacto" />
       </NavLayout.Menu>
     </NavLayout>
   );

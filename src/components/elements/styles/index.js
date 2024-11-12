@@ -11,6 +11,7 @@ export const Main = styled.main`
   overflow: hidden auto;
   height: 100vh;
   width: 100%;
+  background: #FAF5E9;
   ${mediaSm(`
     padding: 1.4rem;
   `)}
@@ -32,11 +33,11 @@ export const Container = styled.div`
   margin: auto;
   width: 100%;
   ${mediaMd(
-    `display: block;
+  `display: block;
      margin-left: 3.1rem;
      font-size: 13px;
      `
-  )}
+)}
 `;
 
 export const Button = styled.button`
@@ -182,10 +183,10 @@ export const Span = styled.span`
     color: ${navbar.item.hover.color};
   }
   ${mediaMd(
-    `${Nav}:not(.is-active) & {
+  `${Nav}:not(.is-active) & {
       display: none;
     }`
-  )}
+)}
 
   ${mediaSm(`
     font-size: 13px;
@@ -206,10 +207,10 @@ export const IconItem = styled.span`
   }
 
   ${mediaMd(
-    `${Nav}:not(.is-active) & svg {
+  `${Nav}:not(.is-active) & svg {
       margin-right: 0;
     }`
-  )}
+)}
 
   ${mediaSm(`
     ${LinkItem} & svg{
@@ -230,10 +231,10 @@ export const NavFooter = styled.footer`
   }
 
   ${mediaMd(
-    `${Nav}:not(.is-active) & {
+  `${Nav}:not(.is-active) & {
       display: none;
     }`
-  )}
+)}
 `;
 
 export const NavFooterTitle = styled.h4`
@@ -245,3 +246,4 @@ export const NavFooterContent = styled.div`
   font-weight: lighter;
   font-size: 12px;
 `;
+
