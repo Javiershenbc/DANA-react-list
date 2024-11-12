@@ -178,13 +178,18 @@ const AnimalesLayout = () => {
       </SectionDescription>
       <LinkList>
         <LinkItem>
-          <a href="https://Horsesite.es">Horsesite</a>
-          <p></p>
-        </LinkItem>
-        <LinkItem>
           <a href="https://faada.org/nuestra-accion-2039-difusion-para-los-refugios-y-animales-afectados-por-la-dana">FAADA</a>
           <p>Iniciativa de FAADA (Fundación para el Asesoramiento y Acción en Defensa de los Animales) para brindar apoyo y difusión a los refugios y animales afectados por la DANA. A través de esta campaña, buscan recaudar fondos y recursos para garantizar el bienestar de animales que han quedado en situación de vulnerabilidad tras las inundaciones.</p>
         </LinkItem>
+        <LinkItem>
+          <a href="https://bioparcvalencia.es/en/punto-de-recogida-de-ayuda-para-animales-dana-2024/">BIOPARC Valencia</a>
+          <p>BIOPARC Valencia y HCV CEU coordinan la recogida y distribución de las ayudas recibidas para los animales afectados por la DANA</p>
+        </LinkItem>
+        <LinkItem>
+          <a href="https://www.tiendanimal.es/articulos/como-ayudar-dana-comunidad-valenciana-animales-protectoras-donaciones/">Tienda Animal</a>
+          <p>Con el objetivo de brindarles la ayuda que necesitan, desde Tiendanimal han puesto en marcha una campaña de donación extraordinaria. En la que puedes participar a través de cualquiera de sus tiendas.</p>
+        </LinkItem>
+
       </LinkList>
     </>
   );
