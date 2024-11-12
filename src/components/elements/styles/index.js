@@ -29,7 +29,6 @@ export const MainWrapper = styled.div`
 export const Container = styled.div`
   display: grid;
   grid-template-columns: minmax(${navbar.minWidth}, ${navbar.width}) 5fr;
-  max-width: 1600px;
   margin: auto;
   width: 100%;
   ${mediaMd(
