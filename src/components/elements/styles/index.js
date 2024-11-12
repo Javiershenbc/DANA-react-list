@@ -14,7 +14,7 @@ export const Main = styled.main`
   width: 100%;
   background: #FAF5E9;
   ${mediaSm(`
-    padding: 1.4em 1.4em 3em 1.4em;
+    padding: 1.4em 1.4em 4.5em 1.4em;
   `)}
 `;
 
