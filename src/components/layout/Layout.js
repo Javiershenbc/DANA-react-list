@@ -124,6 +124,10 @@ const AyudaLayout = () => {
           <a href="https://ayudadana.com/">Ayuda DANA</a>
           <p>Sitio web dedicado a la organización de ayuda y recursos para afectados por la DANA. Ofrece información sobre cómo solicitar ayuda y unirte a redes de voluntariado en la región.</p>
         </LinkItem>
+        <LinkItem>
+          <a href="https://somsolidaritat.gva.es/es/">Som Solidaritat - Generalitat Valenciana</a>
+          <p>Som Solidaritat de la Generalitat Valenciana es una plataforma que centraliza información y recursos de ayuda para personas afectadas por emergencias como la DANA, ofreciendo opciones de apoyo para afectados, oportunidades de voluntariado, colaboración empresarial y acceso a servicios esenciales como salud, educación y asistencia psicosocial, junto con detalles de contacto y recursos para familiares y afectados. </p>
+        </LinkItem>
       </LinkList>
     </>
   );
